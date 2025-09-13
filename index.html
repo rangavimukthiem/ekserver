@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ekafy Technologies — Innovative web & software solutions that enhance human well-being and the environment.">
+  <meta name="author" content="Ekafy Technologies">
+  <title>Ekafy Technologies — Innovative Digital Solutions</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#00bfa6; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071021 0%, #08131d 100%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+    header{padding:28px 20px;display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#006bff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042026}
+    .logo span{font-size:20px}
+    .nav{display:flex;gap:18px;align-items:center}
+    .btn{background:var(--accent);color:#042026;padding:10px 14px;border-radius:10px;font-weight:700;border:none;cursor:pointer}
+
+    .container{max-width:var(--maxw);margin:30px auto;padding:0 20px}
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:32px;align-items:center}
+    .eyebrow{color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+    h1{font-size:36px;margin:0 0 14px;line-height:1.05}
+    p.lead{color:var(--muted);margin:0 0 22px}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:var(--glass);padding:12px 14px;border-radius:12px;font-weight:600}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .hero-visual{border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#031421,#082033);padding:18px}
+    .code-mock{background:#031a24;padding:18px;border-radius:10px;color:#9beadc;font-family:monospace;font-size:13px;min-height:220px}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .service{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));}
+    .service h3{margin:0 0 8px}
+    .cta{display:flex;gap:12px;align-items:center;margin-top:18px}
+
+    .about{display:flex;gap:18px;align-items:flex-start;margin-top:42px}
+    .about .left{flex:1}
+    .about .right{width:360px}
+
+    footer{max-width:var(--maxw);margin:60px auto;padding:22px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr 1fr}
+      .about{flex-direction:column}
+      .about .right{width:100%}
+    }
+    @media (max-width:640px){
+      h1{font-size:26px}
+      .services{grid-template-columns:1fr}
+    }
+
+    /* tiny helpers */
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:700}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><span>EK</span></div>
+      <div>
+        <div style="font-weight:800;font-size:16px">Ekafy Technologies</div>
+        <div style="font-size:12px;color:var(--muted)">Innovative digital & environmental solutions</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#services" class="muted">Services</a>
+      <a href="#about" class="muted">About</a>
+      <a href="#contact" class="muted">Contact</a>
+      <a class="btn" href="#contact">Get Started</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow pill">Trusted · Sustainable · Practical</div>
+        <h1>We build digital products that improve lives <span style="color:var(--accent)">and the environment</span>.</h1>
+        <p class="lead">Ekafy Technologies provides web & mobile apps, cloud hosting, 3D design and custom solutions focused on sustainability and human well-being. Launch faster with solutions designed for small teams and growing businesses.</p>
+
+        <div class="features">
+          <div class="feature">Websites & eCommerce</div>
+          <div class="feature">Mobile & Flutter</div>
+          <div class="feature">Cloud Hosting</div>
+          <div class="feature">Automation & DevOps</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="#contact">Request a Quote</a>
+          <a class="muted" href="#services">See services →</a>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <strong>Quick facts</strong>
+          <p class="muted" style="margin:8px 0 0">Local Sri Lanka support · Host with reliable providers · GDPR & privacy aware · Fast turnaround for MVPs</p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="hero-visual card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+            <div style="font-weight:800">Live preview</div>
+            <div class="pill">Prototype</div>
+          </div>
+          <div class="code-mock">
+<pre style="margin:0;white-space:pre-wrap">$ cd /var/www/ekafy.com
+$ git pull origin stable
+# deployment logs here
+2025-09-13 10:42:00 Deployment complete
+</pre>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services" class="services" aria-label="Services">
+      <div class="service card">
+        <h3>Web & eCommerce Development</h3>
+        <p class="muted">Fast, responsive websites and online stores with SEO and payment integration. CMS or headless — your choice.</p>
+      </div>
+      <div class="service card">
+        <h3>Mobile Apps (Flutter)</h3>
+        <p class="muted">Cross-platform apps with native-like performance, background services and monetization support.</p>
+      </div>
+      <div class="service card">
+        <h3>Cloud & DevOps</h3>
+        <p class="muted">Managed hosting, CI/CD, automated deploys (webhooks), monitoring and backups for production reliability.</p>
+      </div>
+      <div class="service card">
+        <h3>3D Design & Visuals</h3>
+        <p class="muted">Product visualizations, packaging mockups and lightweight AR-ready assets for marketing and prototyping.</p>
+      </div>
+      <div class="service card">
+        <h3>Automation & Integrations</h3>
+        <p class="muted">Automate workflows with webhooks, APIs and scheduled jobs to save time and reduce errors.</p>
+      </div>
+      <div class="service card">
+        <h3>Consulting & Strategy</h3>
+        <p class="muted">Product planning, UX audits and growth-focused roadmaps to take your idea to market.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="left">
+        <h2>About Ekafy</h2>
+        <p class="muted">Ekafy Technologies is a small, agile team building digital products and services that are efficient, accessible and environmentally conscious. We combine engineering, UX and practical business sense to deliver solutions tailored to local and global customers.</p>
+
+        <ul style="margin-top:14px;line-height:1.6;color:var(--muted)">
+          <li>Local presence with international practices</li>
+          <li>Focus on sustainability and human impact</li>
+          <li>Rapid MVP delivery and iterative development</li>
+        </ul>
+      </div>
+      <div class="right card">
+        <h3>Get in touch</h3>
+        <form id="contact" onsubmit="return handleContact(event)">
+          <div style="margin-bottom:10px">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div style="margin-bottom:10px">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div style="margin-bottom:10px">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"></textarea>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button class="btn" type="submit">Send message</button>
+            <div id="contactStatus" class="muted" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© <strong>Ekafy Technologies</strong> <span class="muted">2025</span></div>
+    <div class="muted">Built with care • <a href="#contact" class="muted">Contact us</a></div>
+  </footer>
+
+  <script>
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('contactStatus');
+      status.textContent = 'Sending...';
+
+      // Simple client-side validation
+      if(!name || !email){ status.textContent = 'Please fill name and email.'; return false }
+
+      // Example: submit to /api/contact (server implementation required)
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({name, email, message})
+      }).then(r=>{
+        if(r.ok){ status.textContent = 'Thanks! We will reply soon.'; document.getElementById('contact').reset(); }
+        else { status.textContent = 'Request failed. Try again later.' }
+      }).catch(err=>{ status.textContent = 'Network error. Try again later.' })
+
+      return false;
+    }
+  </script>
+</body>
+</html>
