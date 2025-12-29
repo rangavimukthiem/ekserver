@@ -1,0 +1,16 @@
+# app-ads.txt for Ekafy Apps | www.ekafy.com
+
+#---------------------- @ priyanjana.emsp@gmail.com Apps on Admob acoount-------------Last modified 2025-12-29------------------
+
+# App 3 - Learn Romaina app 
+google.com, pub-2435550525746750, DIRECT, f08c47fec0942fa0
+
+#---------------------- @ rangavimukthiem@gmail.com Apps on Admob acoount-------------Last modified 2025-12-29------------------
+
+# App 2 - Verb finder App 
+# App 1 â€“ Downtime calculator
+google.com, pub-9350134419581983, DIRECT, f08c47fec0942fa0
+
+
+
+# please  enter ad text lines separately by admob accounts and update last modified dates correspondly
